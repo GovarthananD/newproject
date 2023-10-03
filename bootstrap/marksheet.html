@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Student Name<input id="name" type="text" value=""><br>
+    Student ID<input id="stuid" type="text" value=""><br>
+    Tamil<input id="tamil" type="number" value=""><br>
+    English<input id="english" type="number" value=""><br>
+    Maths<input id="maths" type="number" value=""><br>
+    Science<input id="science" type="number" value=""><br>
+    Social Science<input id="social" type="number" value=""><br>
+    <button id="calc" onclick="myfunction()">Submit</button>
+    <p id="total">Result</p>
+    <p id="demo1"></p>
+    <p id=""></p>
+
+    <script>
+        function myfunction () {
+            var a = document.getElementById("name").value;
+            var b = document.getElementById("stuid").value;
+            var c = document.getElementById("tamil").value;
+            var d = document.getElementById("english").value;
+            var e = document.getElementById("maths").value;
+            var f = document.getElementById("science").value;
+            var g = document.getElementById("social").value;
+
+            var total = parseInt(c) +parseInt(d)+parseInt(e)+parseInt(f)+parseInt(g);
+            document.getElementById("total").innerHTML = a + " " + total;
+
+           if(c < 35) {
+                document.getElementById("demo1").innerHTML = "He failed in Tamil";
+            }else if(d < 35) {
+                document.getElementById("demo1").innerHTML = "He failed in English";
+            }else if(e < 35){
+                document.getElementById("demo1").innerHTML = "He failed in Maths";
+            }else if(f < 35) {
+                document.getElementById("demo").innerHTML = "He failed in Science";
+            }else if(g < 35) {
+                document.getElementById("demo1").innerHTML = "He failed in Social Science";
+            }else if(total >= 175) {
+                document.getElementById("demo1").innerHTML = "He passed in exam";
+            }else{"He failed in exam"}
+        }
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="pagination">
+            <button class="btn1" onclick="backbtn()">Prev</button>
+            <ul>
+                <li class="link active" onclick="activelink()" value="1">1</li>
+                <li class="link" onclick="activelink()" value="2">2</li>
+                <li class="link" onclick="activelink()" value="3">3</li>
+                <li class="link" onclick="activelink()" value="4">4</li>
+                <li class="link" onclick="activelink()" value="5">5</li>
+                <li class="link" onclick="activelink()" value="6">6</li>
+            </ul>
+            <button class="btn1" onclick="nextbtn()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        let link = document.getElementsByClassName("link");
+        let currentValue =1;
+        function activelink(){
+            for(l of link){
+                l.classList.remove("active");
+            }
+            event.target.classList.add("active");
+            currentValue = event.target.value;
+        }
+        function backbtn(){
+            if(currentValue > 1){
+                for(l of link){
+                    l.classList.remove("active");
+                }
+                currentValue--;
+                link[currentValue-1].classList.add("active");
+            }
+        }
+        function nextbtn(){
+            if(currentValue < 6){
+                for(l of link){
+                    l.classList.remove("active");
+                }
+                currentValue++;
+                link[currentValue-1].classList.add("active");
+            }
+        }
+    </script>
+
+</body>
+</html>

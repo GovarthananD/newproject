@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <style>
+    .shop-style{
+        background-color: rgb(31, 29, 29);
+        height: 290px;
+        padding-top: 6.5%;
+        padding-left: 35%;        
+    }
+    h1{
+        color: white;
+        font-size: 60px;
+    }  
+    .shop{
+        color: white;
+        font-size: 18px;
+        margin-left: 38px;
+        opacity: 70%;
+    }
+    .container{
+        margin-top: 50px;
+    }
+    .card-text{
+        padding-bottom: 40px;
+    }
+    .rights{
+        background-color: rgb(31, 29, 29);
+        height: 100px;
+    }
+    .copy{
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .navbar-brand{
+        margin-left: 70px;
+    }
+    
+   
+    
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Start Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">All Products</a></li>
+                  <li><a class="dropdown-item" href="#">Popular Items</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">New Arraivals</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button type="button" class="btn btn-outline-dark"><i class="fa fa-shopping-cart"></i>  Cart</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="shop-style">
+        <h1>Shop in style</h1>
+        <p class="shop">With this shop homepage template</p>
+      </div>
+    
+      <div class="container text-center">
+        <div class="row row-cols-4">
+          <div class="col"><span class="border"><div class="card" style="width: 18rem;">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Fancy Product</strong></h5>
+              <p class="card-text">$40.00 - $80.00</p>
+              <button type="button" class="btn btn-outline-dark">View Options</button>
+            </div>
+          </div></span></div>
+          
+          <div class="col"><div class="col"><span class="border"><div class="card" style="width: 18rem;">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Speacial Item</strong></h5>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="card-text"><del>$20.00</del> - $18.00</p>
+              <button type="button" class="btn btn-outline-dark">View Options</button>
+            </div>
+          </div></span>
+        </div>
+    </div>
+          
+        <div class="col"><div class="col"><span class="border"><div class="card" style="width: 18rem;">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Sale Item</strong></h5>
+              <p class="card-text"><del>$50.00</del> - $25.00</p>
+              <button type="button" class="btn btn-outline-dark">View Options</button>
+            </div>
+          </div></span>
+        </div>
+    </div>
+          
+          
+          <div class="col"><div class="col"><span class="border"><div class="card" style="width: 18rem;">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Popular Item</strong></h5>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="card-text">$40.00</p>
+              <button type="button" class="btn btn-outline-dark">View Options</button>
+            </div>
+          </div></span>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row row-cols-4">
+            <div class="col"><div class="col"><span class="border"><div class="card" style="width: 18rem;">
+                <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Sale Item</strong></h5>
+                  <p class="card-text"><del>$50.00</del> - $25.00</p>
+                  <button type="button" class="btn btn-outline-dark">View Options</button>
+                </div>
+              </div></span>
+            </div>
+        </div>
+          
+          
+            <div class="col"><span class="border"><div class="card" style="width: 18rem;">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Fancy Product</strong></h5>
+              <p class="card-text">$40.00 - $80.00</p>
+              <button type="button" class="btn btn-outline-dark">View Options</button>
+            </div>
+          </div></span></div>
+          
+          <div class="col"><div class="col"><span class="border"><div class="card" style="width: 18rem;">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title"><strong>Speacial Item</strong></h5>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="card-text"><del>$20.00</del> - $18.00</p>
+              <button type="button" class="btn btn-outline-dark">View Options</button>
+            </div>
+          </div></span>
+        </div>
+    </div>
+          
+       
+          
+          
+          <div class="col"><div class="col"><span class="border"><div class="card" style="width: 18rem;">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Popular Item</strong></h5>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="card-text">$40.00</p>
+              <button type="button" class="btn btn-outline-dark">View Options</button>
+            </div>
+          </div></span>
+        </div>
+        </div>
+        </div>
+      </div>
+    
+      <div class="rights">
+        <p class="copy">Copyright © Your Website 2022</p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

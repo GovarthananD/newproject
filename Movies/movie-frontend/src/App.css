@@ -1,0 +1,36 @@
+.App{
+  font-family: sans-serif;
+  font-family: Roboto;
+}
+.movie-container{
+  width: 329px;
+}
+.movie-poster{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.movie-specs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-summary{
+  margin-top: 0px;
+}
+.movie-list{
+  margin-top: 20px;
+  margin-left: 70px;
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+.button{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.form{
+  text-align: center;
+  margin-top: 50px;
+}

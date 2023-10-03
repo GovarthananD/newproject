@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1" type="number" value="">
+    <input id="num2" type="number" value="">
+    <select id="methods" onchange="changemethods()">
+        <option>Select Method</option>
+        <option>Addtion</option>
+        <option>Substraction</option>
+        <option>Multiplication</option>
+        <option>Divition</option>
+    </select>
+    <button id="calcu" onclick="myfunction()">Calculate</button>
+    <p id="result"></p>
+    
+
+    <script>
+
+
+        function myfunction () {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+
+           var x =  document.getElementById("methods").value;
+
+            if(x == "Addtion") {
+               document.getElementById("result").innerHTML = parseInt(a) + parseInt(b);
+            }else if(x == "Substraction") {
+                document.getElementById("result").innerHTML = parseInt(a) - parseInt(b);
+            }else if(x == "Multiplication") {
+                document.getElementById("result").innerHTML = parseInt(a) * parseInt(b);
+            }else {document.getElementById("result").innerHTML = parseInt(a) / parseInt(b)}       
+
+
+        }
+
+    </script>
+</body>
+</html>

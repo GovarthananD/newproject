@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Student Name <input id="name" placeholder="Name" type="text" value=""><br>
+    Student ID <input id="stuid" placeholder="ID No" value=""><br>
+    Tamil <input id="tamil" placeholder="Marks" type="number" value=""><br>
+    English <input id="english" placeholder="Marks" type="number" value=""><br>
+    Maths <input id="maths" placeholder="Marks" type="number" value=""><br>
+    Science <input id="science" placeholder="Marks" type="number" value=""><br>
+    Social Science <input id="social" placeholder="Marks" type="number" value=""><br>
+    <button id="sub" onclick="myfunction()">Submit</button><br>
+    <p id="result">Total</p>
+    <p id="demo"></p>
+
+    <script>
+        function myfunction () {
+            var a = document.getElementById("name").value;
+            var b = document.getElementById("stuid").value;
+            var c = document.getElementById("tamil").value;
+            var d = document.getElementById("english").value;
+            var e = document.getElementById("maths").value;
+            var f = document.getElementById("science").value;
+            var g = document.getElementById("social").value;
+
+            //var total = c+d+e+f+g;
+            var total = (parseInt(c)+parseInt(d)+parseInt(e)+parseInt(f)+parseInt(g));
+            document.getElementById("result").innerHTML = a + " " + total;
+            if(total >= 175) {
+                document.getElementById("demo").innerHTML = "He passed in exam";
+            }else{
+                document.getElementById("demo").innerHTML = "He failed in exam";
+            }
+            
+        }
+    </script>
+</body>
+</html>

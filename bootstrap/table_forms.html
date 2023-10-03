@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table_form.css">
+</head>
+<body>
+    First Name<input id="first" placeholder="First Name" type="text" value=""><br>
+    Last Name<input id="last" placeholder="Last Name" type="text" value=""><br>
+    Address<input id="address" placeholder="Address" type="text" value=""><br>
+    Pincode<input id="pin" placeholder="Pincode" type="number" value="">
+    <p>Gender <input id="gender" type="radio" name="gender">Male
+        <input type="radio" name="gender">Female</p>
+    Food<select id="foods">
+            <option>Select Food</option>
+            <option>Chicken Briyani</option>
+            <option>Chicken Noodels</option>
+            <option>Chicken Rise</option>
+            <option>Chicken Meals</option>
+            <option>Chicken Shawarma</option>
+        </select><br>
+    State<input id="state" placeholder="State" type="text" value=""><br>
+    Country<input id="country" placeholder="Country" type="text" value=""><br>
+    <button id="submit" onclick="myfunction()">
+        Submit
+    </button>
+
+    <table id="table">
+        <thead>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food</th>
+            <th>State</th>
+            <th>Country</th>
+        </thead>
+    </table>
+
+
+
+
+<script>
+    function myfunction () {
+        var FirstName = document.getElementById("first").value;
+        var LastName = document.getElementById("last").value;
+        var Address = document.getElementById("address").value;
+        var Pincode = document.getElementById("pin").value;
+        var Gender = document.getElementById("gender").value;
+        var Food = document.getElementById("foods").value;
+        var State = document.getElementById("state").value;
+        var Country = document.getElementById("country").value;
+
+        var tr = document.createElement("tr");
+
+        var td1 = tr.appendChild(document.createElement("td"));
+        var td2 = tr.appendChild(document.createElement("td"));
+        var td3 = tr.appendChild(document.createElement("td"));
+        var td4 = tr.appendChild(document.createElement("td"));
+        var td5 = tr.appendChild(document.createElement("td"));
+        var td6 = tr.appendChild(document.createElement("td"));
+        var td7 = tr.appendChild(document.createElement("td"));
+        var td8 = tr.appendChild(document.createElement("td"));
+
+        td1.innerHTML=FirstName;
+        td2.innerHTML=LastName;
+        td3.innerHTML=Address;
+        td4.innerHTML=Pincode;
+        td5.innerHTML=Gender;
+        td6.innerHTML=Food;
+        td7.innerHTML=State;
+        td8.innerHTML=Country;
+
+        document.getElementById("table").appendChild(tr);
+    }
+</script>
+</body>
+</html>
