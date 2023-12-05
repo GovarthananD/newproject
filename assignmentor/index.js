@@ -1,29 +1,25 @@
-const express = require('express');
-const mentorroute = require('./routes/mentorroute');
-const studentroute = require('./routes/studentroute');
-
-
-const db = require('./db/connect');
-
+const express = require("express");
+const DB = require("./database");
+require("dotenv").config();
+const cors = require("cors");
+const studentRoute = require("./student");
+const mentorRoute = require("./mentor");
+const assignmentor = require("./assignMentorStudent");
 
 const app = express();
 app.use(express.json());
-app.use("/allstudent",studentroute)
-app.use("/allmentor",mentorroute)
+app.use(cors());
 
-app.get('/',(req,res)=>{
-    res.send({message:'Application working fine'})
-})
+DB();
 
+app.use(studentRoute);
+app.use(mentorRoute);
+app.use(assignmentor);
 
+app.get("/", (req, res) => {
+  res.send("Hello Everyone");
+});
 
-
-
-
-
-
-
-
-app.listen(4000,()=>{
-    console.log('App working fine by 4000');
-})
+app.listen(process.env.PORT, () => {
+  console.log("Server Running on PORT", process.env.PORT);
+});

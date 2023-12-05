@@ -1,1 +1,1 @@
-export const API = "https://64fc0b70605a026163ae22ee.mockapi.io";
+export const API = "https://movie-backend-dobu.onrender.com";
