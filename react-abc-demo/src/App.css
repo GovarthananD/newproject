@@ -1,0 +1,38 @@
+.movie-container{
+  margin-top: 10px;
+  margin-left: 10px; 
+  width: 263px;
+}
+body{
+  margin: 0;
+  min-Width: 100%;
+}
+.movie-poster{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.movie-specs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie-summary{
+  margin-top: 0px;
+}
+.finaledit{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.add-movie{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.movie-details{
+  max-width: 640px;
+}

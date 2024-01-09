@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="name"></div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+     var myarray = [{
+        "name": "Prem",
+        "age": 21,
+        "phno": 476574,
+        "department": "datasite",
+        "salary": 12000,
+        "location": "singanallur",
+        "skills": ["java", "css", "html"]
+    }, {
+        "name": "Sunder",
+        "age": 26,
+        "phno": 875693,
+        "department": "edger",
+        "salary": 18000,
+        "location": "sundarapuram",
+        "skills": ["python", "mis", "html"]
+    }, {
+        "name": "Saran",
+        "age": 23,
+        "phno": 8362889,
+        "department": "xpp",
+        "salary": 12000,
+        "location": "thudiyalur",
+        "skills": ["mis", "css", "tablue"]
+    }, {
+        "name": "Rajasekar",
+        "age": 23,
+        "phno": 73664837,
+        "department": "xbrl",
+        "salary": 12000,
+        "location": "kurumpalayam",
+        "skills": ["excel", "dwg", "pdf"]
+    }, {
+        "name": "Samuel Raja",
+        "age": 29,
+        "phno": 874673,
+        "department": "ppc",
+        "salary": 21000,
+        "location": "hopes",
+        "skills": ["word", "txt", "powerpoint"]
+    }, {
+        "name": "Sakthivel",
+        "age": 20,
+        "phno": 8736275,
+        "department": "datasite",
+        "salary": 12000,
+        "location": "saibabacolony",
+        "skills": ["java", "css", "html"]
+    }, {
+        "name": "Gandhirajan",
+        "age": 25,
+        "phno": 937648,
+        "department": "edger",
+        "salary": 15000,
+        "location": "somanur",
+        "skills": ["dwg", "json", "html"]
+    }, {
+        "name": "Vignesh",
+        "age": 25,
+        "phno": 3546386,
+        "department": "xpp",
+        "salary": 18000,
+        "location": "avarampalayam",
+        "skills": ["excel", "tablue", "powerbi"]
+    }, {
+        "name": "Krishna",
+        "age": 23,
+        "phno": 76457627,
+        "department": "xbrl",
+        "salary": 12000,
+        "location": "karamadai",
+        "skills": ["xml", "xls", "xlms"]
+    }, {
+        "name": "Vishnu",
+        "age": 21,
+        "phno": 475893,
+        "department": "ppc",
+        "salary": 13000,
+        "location": "cheranma nagar",
+        "skills": ["excel", "graber", "powerbi"]
+    }];
+    var empstr = " ";
+   
+    for(i=0;i<myarray.length;i++){
+        empstr = empstr + "<h1>"+ myarray[i].name +"</h1><hr><h3>"+myarray[i].age+"Years Old"+"</h3><h3>"+"working in"+" "+myarray[i].department+"</h3><h3>"+"Salary"+" "+myarray[i].salary+"</h3><h3>"+"Living in"+" "+myarray[i].location+"</h3><h3>"+"Skills -"+" "+myarray[i].skills+"</h3>";
+        
+    }
+    document.getElementById("name").innerHTML=empstr;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+   
+    
+</body>
+</html>

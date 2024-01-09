@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <body>
+            <h1>Rest Countries Flags</h1>
+            <div id="country">
+
+            </div>
+        </body>
+        <script>
+        fetch('https://restcountries.com/v2/all')
+        .then(response => response.json())
+        .then(data => console.log(data))
+       
+        for(i=0;i<data.length;i++){
+            console.log(data[i].flags)
+        }
+         const contry = document.getElementById("country").innerHTML = data[i];
+
+
+
+
+        </script>
+           
+    </head>
+</html>

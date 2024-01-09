@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Display the output to Table</h1>
+
+    FirstName<input id="fname" type="text" value=""><br>
+    LastName<input id="lname" type="text" value=""><br>
+    Age<input id="age" type="number" value=""><br>
+    Address<input id="address" type="text" value=""><br>
+    Pincode<input id="pincode" type="text" value=""><br> 
+    City<input id="city" type="text" value=""><br>
+    State<input id="state" type="text" value=""><br>
+
+    <button id="sub" onclick="myprocess()">Submit</button>
+
+    <table id="table">
+        <htable>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>City</th>
+            <th>State</th>
+        </htable>
+    </table>
+
+
+
+    <script>
+        function myprocess () {
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("lname").value;
+            var c = document.getElementById("age").value;
+            var d = document.getElementById("address").value;
+            var e = document.getElementById("pincode").value;
+            var f = document.getElementById("city").value;
+            var g = document.getElementById("state").value;
+
+            var tr = document.createElement("tr");
+
+            var tb1 = tr.appendChild(document.createElement("td"));
+            var tb2 = tr.appendChild(document.createElement("td"));
+            var tb3 = tr.appendChild(document.createElement("td"));
+            var tb4 = tr.appendChild(document.createElement("td"));
+            var tb5 = tr.appendChild(document.createElement("td"));
+            var tb6 = tr.appendChild(document.createElement("td"));
+            var tb7 = tr.appendChild(document.createElement("td"));
+
+            tb1.innerHTML = a;
+            tb2.innerHTML = b;
+            tb3.innerHTML = c;
+            tb4.innerHTML = d;
+            tb5.innerHTML = e;
+            tb6.innerHTML = f;
+            tb7.innerHTML = g;
+
+            document.getElementById("table").appendChild(tr);
+        }
+    </script>
+</body>
+</html>
