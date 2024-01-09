@@ -1,0 +1,15 @@
+
+.countries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.country-div{
+    border: 1px solid burlywood;
+    padding: 15px;
+}
+.rest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
