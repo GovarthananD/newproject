@@ -1,0 +1,70 @@
+.home{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 1px solid;
+  margin-top: 200px;
+  margin-left: 430px;
+  width: 390px;
+  color: white;
+}
+.days{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 200px;
+  color: white;
+}
+.regist{
+  width: 290px;
+  height: 290px;
+  margin-top: 130px;
+  margin-left: 500px;
+  color: white;
+}
+.reg{
+  border: none;
+  width: 250px;
+  height: 25px;
+  padding: 2px;
+  background-color: #cccac6;
+  color: black;
+}
+#forgot{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ margin-left: 70px;
+ color: white;
+}
+#submit{
+  display: flex;
+  gap: 5px;
+  justify-content: space-evenly;
+  color: white;
+}
+.sign{
+  width: 290px;
+  height: 290px;
+  margin-top: 130px;
+  margin-left: 500px;
+  color: white;
+}
+.forgotpass{
+  width: 290px;
+  height: 290px;
+  margin-top: 190px;
+  margin-left: 500px;
+  color: white;
+}
+#for{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+  color: white;
+}
+h2{
+  color: #2b8fed;
+  color: white;
+}
