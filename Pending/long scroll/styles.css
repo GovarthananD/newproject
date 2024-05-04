@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section{
+    min-height: 300px;
+    padding: 45px 35px;
+}
+section.first{
+    background-color: rgb(255, 249, 218);
+}
+section.second{
+    background-color: rgb(44, 45, 47);
+    color: #fff;
+}
+section.third{
+    background-color: rgb(244, 205, 53);
+}
+section.four{
+    background-color: rgb(255, 138, 138);
+}
+section.five{
+    background-color: rgb(162, 162, 160);
+    color: #fff;
+}
+section.six{
+    background-color: rgb(44, 45, 47);
+    color: #fff;
+}
+section.seven{
+    background-color: rgb(255, 138, 138);
+    color: #fff;
+}
+section.eight{
+    background-color: rgb(244, 205, 53);
+}
+section.nine{
+    background-color: rgb(255, 138, 138);
+}
+section.ten{
+    background-color: rgb(162, 162, 160);
+}
+.seperator1{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid rgb(44, 45, 47);
+    margin-top:-6.9vw;
+}
+.seperator2{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid rgb(244, 205, 53);
+    margin-top:-6.9vw;
+}
+.seperator3{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid rgb(255, 138, 138);
+    margin-top:-6.9vw;
+}
+.seperator4{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid rgb(162, 162, 160);
+    margin-top:-6.9vw;
+}
+.seperator5{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid rgb(44, 45, 47);
+    margin-top:-6.9vw;
+}
+.seperator6{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid  rgb(255, 138, 138);
+    margin-top:-6.9vw;
+}
+.seperator7{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid rgb(244, 205, 53);
+    margin-top:-6.9vw;
+}
+.seperator8{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid rgb(255, 138, 138);
+    margin-top:-6.9vw;
+}
+.seperator9{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid rgb(162, 162, 160);
+    margin-top:-6.9vw;
+}
+.seperator10{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid rgb(44, 45, 47);
+    margin-top:-6.9vw;
+}

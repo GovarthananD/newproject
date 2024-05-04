@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+h1{
+  color: #0658d4;
+}
+.register{
+  margin-top: 100px;
+}
+.regist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bod{
+  height: 25px;  
+}
+.submit{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+.days{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 200px;
+  color: white;
+}
+.navbar{
+  height: 100px;
+  width: 100%;
+  background-color: blueviolet;
+}
+.home{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  
+}
+.route{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 10px;
+  margin-right: 10px; 
+  
+  button{
+    border: none;
+    border: transparent;
+    cursor: pointer; 
+  }
+}
+
+.dress{
+  display: flex;
+  height: 390px;
+  width: 100%;
+  gap: 1px;
+  margin-top: 70px;
+  justify-content: space-evenly;
+}
+
+.box{
+  height: 70px;
+  width: 70px;
+}
+

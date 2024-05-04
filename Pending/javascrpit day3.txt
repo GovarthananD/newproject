@@ -1,0 +1,107 @@
+In JavaScript, "window", "screen", and "document" are related but represent different aspects of the browser environment:
+
+Window:
+The window object represents the browser window or tab that contains the DOM (Document Object Model).
+It's the global object in client-side JavaScript, representing the browser window and providing properties and methods for manipulating it.
+It serves as the global namespace for all JavaScript code running within a browser window or tab.
+It provides access to various functionalities like manipulating the browser history, controlling the size and position of the window, setting timeouts, etc.
+Examples of properties/methods: window.location, window.open(), window.close(), window.setTimeout(), etc.
+
+Screen:
+The screen object represents the user's screen or display device.
+It provides information about the user's screen such as its width, height, color depth, and pixel depth.
+It's a property of the window object, accessible via window.screen.
+Examples of properties: screen.width, screen.height, screen.availWidth, screen.availHeight, screen.colorDepth, screen.pixelDepth, etc.
+
+Document:
+The document object represents the HTML document loaded in the browser window.
+It's a property of the window object, accessible via window.document.
+It provides methods and properties for accessing and manipulating the contents of the document, such as adding or removing elements, changing styles, handling events, etc.
+It's part of the DOM (Document Object Model) API.
+Examples of properties/methods: document.getElementById(), document.createElement(), document.querySelector(), document.title, document.body, etc.
+
+
+{
+  "name": "Govarthanan",
+  "title": "Fullstack Developer",
+  "location": "Coimbatore, Tamilnadu",
+  "email": "thalagoa2205@gmail.com",
+  "phone": "8723586784",
+  "summary": "Seeking a challenging role as a software developer
+where I can apply my skills in React.js and Node.js to contribute to innovative projects. Eager to grow professionally by tackling real-world challenges, collaborating with
+talented teams, and continuously expanding knowledge
+in the ever-evolving field of software development",
+  "education": [
+    {
+      "degree": "Bsc Statistics",
+      "institution": "Govt Arts and Science",
+      "location": "Coimbatore",
+      "graduation_year": "2017"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Operation Executive",
+      "company": "SBI Cards",
+      "location": "Coimbatore",
+      "dates": "2018 - 2021",
+      "description": "Responsible for data entry customer virtual and physical application verification"
+    }
+  ],
+  "skills": [
+    "HTML CSS",
+    "Javascript",
+    "React",
+    "Nodejs",
+    "express",
+    "Mongodb",
+    "sql",
+    "Data Analysis"
+  ],
+  "languages": [
+    "English"
+  ],
+  "links": {
+    "LinkedIn": "https://www.linkedin.com/in/",
+    "GitHub": "https://github.com/t"
+  }
+}
+
+console.log("Name:", resume_data["name"])
+console.log("Title:", resume_data["title"])
+console.log("Location:", resume_data["location"])
+console.log("Email:", resume_data["email"])
+console.log("Phone:", resume_data["phone"])
+console.log("Summary:", resume_data["summary"])
+console.log("\nEducation:")
+for edu in resume_data["education"]:
+    console.log("  Degree:", edu["degree"])
+    console.log("  Institution:", edu["institution"])
+    console.log("  Location:", edu["location"])
+    console.log("  Graduation Year:", edu["graduation_year"])
+    console.log()
+
+console.log("Experience:")
+for exp in resume_data["experience"]:
+    console.log("  Title:", exp["title"])
+    console.log("  Company:", exp["company"])
+    console.log("  Location:", exp["location"])
+    console.log("  Dates:", exp["dates"])
+    console.log("  Description:", exp["description"])
+    console.log()
+
+console.log("Skills:", ', '.join(resume_data["skills"]))
+console.log("Languages:", ', '.join(resume_data["languages"]))
+console.log("LinkedIn:", resume_data["links"]["LinkedIn"])
+console.log("GitHub:", resume_data["links"]["GitHub"])
+
+
+for (const [key, value] of Object.entries(profile)) {
+  console.log(`${key}:`, value);
+}
+This loop iterates over each key in the profile object using Object.keys(), and then retrieves the corresponding value using the key. 
+Adjust the logging or processing as needed based on your requirements.
+
+
+
+

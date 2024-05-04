@@ -1,0 +1,92 @@
+-- Create Movie table
+CREATE TABLE Movie (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(255),
+    ReleasedOn DATE,
+    ProducedBy VARCHAR(255)
+);
+
+-- Create Media table
+CREATE TABLE Media (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(255),
+    MediaType VARCHAR(50),
+    MediaUrl VARCHAR(255),
+    Movie_id INTEGER,
+    FOREIGN KEY (Movie_id) REFERENCES Movie(id)
+);
+
+-- Create Genre table
+CREATE TABLE Genre (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100)
+);
+
+-- Create Review table
+CREATE TABLE Review (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(255),
+    Description TEXT,
+    Movie_id INTEGER,
+    User_id INTEGER,
+    FOREIGN KEY (Movie_id) REFERENCES Movie(id),
+    FOREIGN KEY (User_id) REFERENCES User(id)
+);
+
+-- Create User table
+CREATE TABLE User (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255),
+    UserName VARCHAR(100),
+    Password VARCHAR(255),
+    City VARCHAR(100)
+);
+
+-- Create Artist table
+CREATE TABLE Artist (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(100),
+    LastName VARCHAR(100)
+);
+
+-- Create Skill table
+CREATE TABLE Skill (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(100)
+);
+
+-- Create Roles table
+CREATE TABLE Roles (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    RoleType VARCHAR(100),
+    Description VARCHAR(255)
+);
+
+-- Create MovieGenreMap table
+CREATE TABLE MovieGenreMap (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Movie_id INTEGER,
+    Genre_id INTEGER,
+    FOREIGN KEY (Movie_id) REFERENCES Movie(id),
+    FOREIGN KEY (Genre_id) REFERENCES Genre(id)
+);
+
+-- Create ArtistSkillMap table
+CREATE TABLE ArtistSkillMap (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Artist_id INTEGER,
+    Skill_id INTEGER,
+    FOREIGN KEY (Artist_id) REFERENCES Artist(id),
+    FOREIGN KEY (Skill_id) REFERENCES Skill(id)
+);
+
+-- Create ArtistRoleMap table
+CREATE TABLE ArtistRoleMap (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Artist_id INTEGER,
+    Role_Id INTEGER,
+    Movie_id INTEGER,
+    FOREIGN KEY (Artist_id) REFERENCES Artist(id),
+    FOREIGN KEY (Role_Id) REFERENCES Roles(id),
+    FOREIGN KEY (Movie_id) REFERENCES Movie(id)
+);
